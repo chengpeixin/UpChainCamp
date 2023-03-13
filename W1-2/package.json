@@ -1,0 +1,27 @@
+{
+  "name": "W1-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:development": "npx hardhat run scripts/deploy.ts --network development",
+    "deploy:scroll": "npx hardhat run scripts/deploy.ts --network scrollTestnet",
+    "node": "npx hardhat node",
+    "test:development": "npx hardhat test --network development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.13.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
